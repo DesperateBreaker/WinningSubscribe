@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotterySubscription</title>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>LotterySubscription</h1>
+    <!-- Lotto 表单 -->
+    <form id="lotteryFormLotto">
+        <h2>Lotto Game</h2>
+        <label for="issueLotto">Start Issue Number:</label>
+        <input type="text" id="issueLotto" name="issueLotto" required pattern="\d{5}"><br><br>
+        <label for="numbersLotto">Subscription Periods:</label>
+        <select id="numbersLotto" name="numbersLotto">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <br><br>
+        <label>Effective</label>
+        <input type="radio" id="validLottoYes" name="validLotto" value="true" checked> Yes
+        <input type="radio" id="validLottoNo" name="validLotto" value="false"> No
+    </form>
+
+    <!-- Ball 表单 -->
+    <form id="lotteryFormBall">
+        <h2>Ball Game</h2>
+        <label for="issueBall">Start Issue Number:</label>
+        <input type="text" id="issueBall" name="issueBall" required pattern="\d{5}"><br><br>
+        <label for="numbersBall">Subscription Periods:</label>
+        <select id="numbersBall" name="numbersBall">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <br><br>
+        <label>Effective</label>
+        <input type="radio" id="validBallYes" name="validBall" value="true" checked> Yes
+        <input type="radio" id="validBallNo" name="validBall" value="false"> No
+    </form>
+
+    <!-- 提交 -->
+    <br>
+    <button type="button" id="submitBtn">Subscription</button>
+
+    <p id="resultLotto"></p>
+    <p id="resultBall"></p>
+</body>
+</html>
