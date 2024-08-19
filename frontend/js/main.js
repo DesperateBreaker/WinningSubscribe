@@ -18,7 +18,7 @@ function submitForms() {
         ball: { issue: ballIssue, numbers: ballNumbers, valid: ballValid }
     };
 
-    fetch('http://124.70.221.179:8001/submit', {
+    fetch('http://124.70.221.179/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
